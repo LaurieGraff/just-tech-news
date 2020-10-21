@@ -6,7 +6,7 @@ class User extends Model {}
 
 // define table columns and configuration
 User.init(
-    {
+{
     // define an id column
     id: {
         // use the special Sequelize DataTypes object provide what type of data it is
@@ -33,7 +33,7 @@ User.init(
         validate: {
             isEmail: true
         }
-    };
+    },
     // define a password column
     password: {
         type: DataTypes.STRING,
@@ -42,9 +42,9 @@ User.init(
             // this means the password must be at least four characters long
             len: [4]
         }
-    }
     },
-    {
+    
+    
     // TABLE CONFIGURATION OPTIONS GO HERE (https://sequelize.org/v5/manual/models-definition.html#configuration))
 
     // pass in our imported sequelize connection (the direct connection to our database)
