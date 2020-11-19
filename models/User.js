@@ -41,9 +41,10 @@ User.init(
         validate: {
             // this means the password must be at least four characters long
             len: [4]
+            }
         }
     },
-    
+    {
     
     // TABLE CONFIGURATION OPTIONS GO HERE (https://sequelize.org/v5/manual/models-definition.html#configuration))
 
